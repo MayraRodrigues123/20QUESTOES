@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Números inteiros</title>
+</head>
+<center>
+<body>
+
+  <style type="text/css">
+    .botao {
+      background: rgb(255, 178, 38);
+      color: black;
+      font-weight: bold;
+      width: 50%;
+      font-size: 20px;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 25px;
+      margin: 0 0 10px;
+  }
+
+  .p {
+      background: rgb(255, 255, 255);
+      font-weight: bold;
+      width: 50%;
+      font-size: 20px;
+  }
+
+  .but {
+      background: rgb(255, 178, 38);
+      color: black;
+      font-weight: bold;
+      width: 50%;
+      font-size: 20px;
+      border: none;
+      border-radius: 3px;
+      padding: 7px 2px;
+  }
+</style>
+  <h1 style="font-size: 30px; background:rgb(169,169,169)";>NÚMEROS INTEIROS</h1>
+  <div>
+    <input class="but" type="number" id="numero1"></input>
+  </div><br>
+  <div>
+    <input class="but" type="number" id="numero2"></input>
+  </div><br>
+  <div>
+    <button class="botao" onclick="verifica();">VERIFICAR</button>
+  </div>
+  <div>
+    <p class="p" id="ver"></p>
+  </div>
+	<script>
+		function verifica() {
+			let numero1 = document.getElementById("numero1").value;
+			let numero2 = document.getElementById("numero2").value;
+			if (numero2 % numero1 === 0) {
+				alert('N é múltiplo')
+			} else {
+				alert('N não é múltiplo')
+			}
+		}
+	</script>
+</body>
+
+</html>

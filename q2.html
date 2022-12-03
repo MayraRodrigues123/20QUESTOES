@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>ÁREA E PERÍMETRO</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<center>
+	<body>
+
+		<style type="text/css">
+
+       .p {
+           background: rgb(255, 255, 255);
+           font-weight: bold;
+           width: 50%;
+           font-size: 35px;
+       }
+
+   </style>
+
+		<h1 style="font-size: 30px; background:rgb(169,169,169)";>ÁREA E PERÍMETRO</h1>
+		<p class="p" id="result"></p>
+		<p class="p" id="resul"></p>
+		<script text="text/javascript">
+
+			var media, area, peri;
+
+			lado = prompt("Informe o lado do quadrado: ");
+			lado = eval(lado);
+
+			area = lado * lado;
+			peri = lado * 4;
+
+			{
+				document.getElementById("result").innerHTML = "A sua area é: " + area ;
+				document.getElementById("resul").innerHTML = "O seu perimetro é: " + peri ;
+			}
+
+
+		</script>
+	</body>
+  </center>
+	</html>

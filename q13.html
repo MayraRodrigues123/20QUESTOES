@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITIVO OU NEGATIVO?</title>
+</head>
+<center>
+<body>
+  <style type="text/css">
+    .botao {
+      background: rgb(255, 178, 38);
+      color: black;
+      font-weight: bold;
+      width: 50%;
+      font-size: 20px;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 25px;
+      margin: 0 0 10px;
+  }
+
+  .but {
+      background: rgb(255, 178, 38);
+      color: black;
+      font-weight: bold;
+      width: 50%;
+      font-size: 20px;
+      border: none;
+      border-radius: 3px;
+      padding: 7px 2px;
+  }
+</style>
+  <h1 style="font-size: 30px; background:rgb(169,169,169)";>POSITIVO OU NEGATIVO?</h1
+    <div>
+      <input class="but" type="number" id="numero"></input>
+    </div><br><br>
+    <div>
+      <button class="botao" onclick="verifica()">verifica</button>
+    </div>
+    <script>
+        function verifica(){
+            console.log('passei')
+            let numero = parseInt(document.getElementById('numero').value);
+            if (numero === 0){
+                alert('Neutro');
+            } else if (numero > 0){
+                alert('Positivo');
+            } else {
+                alert('Negativo');
+            }
+        }
+    </script>
+</body>
+</center>
+</html>

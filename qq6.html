@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TEMPERATURA</title>
+  </head>
+  <center>
+  <body>
+      <style type="text/css">
+    .botao {
+        background: rgb(255, 178, 38);
+        color: black;
+        font-weight: bold;
+        width: 50%;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 25px;
+        margin: 0 0 10px;
+    }
+
+    .p {
+        background: rgb(255, 255, 255);
+        font-weight: bold;
+        width: 50%;
+        font-size: 20px;
+    }
+
+    .but {
+        background: rgb(255, 178, 38);
+        color: black;
+        font-weight: bold;
+        width: 50%;
+        font-size: 20px;
+        border: none;
+        border-radius: 3px;
+        padding: 7px 2px;
+    }
+    </style>
+
+    <h1 style="font-size: 30px; background:rgb(169,169,169)";>TEMPERATURA</h1>
+
+      <main>
+        <div>
+          <input type="number" class="but" placeholder="INSIRA UMA TEMPERATURA EM CELCIUS" id="cel">
+        </div><br>
+        <div>
+          <input type="button" name="" value="CALCULAR" class="botao" onclick="calc()">
+        </div><br>
+        <div>
+          <p class="p" id="result"></p>
+        </div>
+      </main>
+
+      <script>
+        const calc = () => {
+          let cel = document.getElementById('cel').value;
+    			let fah = parseFloat(cel * 9/5) + 32;
+          let kel = parseFloat(cel + 273.15;
+
+    		 document.getElementById('result').innerHTML = `O VALOR EM CELCIUS ${cel} TEM:<br>FAHRENHEIT = ${fah}<br>KELVIN = ${kel}`
+    	}
+
+    </script>
+  </body>
+</center>
+</html>

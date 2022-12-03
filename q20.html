@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUAL O MêS E O TRIMESTRE?</title>
+</head>
+<center>
+<body>
+
+  <style type="text/css">
+      .but {
+          background: rgb(255, 178, 38);
+          color: black;
+          font-weight: bold;
+          width: 50%;
+          font-size: 20px;
+          border: none;
+          border-radius: 5px;
+          padding: 10px 25px;
+          margin: 0 0 10px;
+      }
+
+      .botao {
+          background: rgb(169,169,169);
+          font-weight: bold;
+          width: 50%;
+          font-size: 20px;
+          border: none;
+          border-radius: 5px;
+          padding: 10px 25px;
+          margin: 0 0 10px;
+      }
+  </style>
+  <h1 style="font-size: 30px; background:rgb(169,169,169)";>QUAL O MÊS E O TRIMESTRE?</h1>
+  <div>
+    <input class="but" type="number" id="numero"></input>
+  </div><br><br>
+  <div>
+    <button class="botao" onclick="verifica();">VERIFICAR</button>
+  </div>
+    <script>
+        function verifica(){
+            let numero = document.getElementById("numero").value;
+            if (numero == 1){
+                alert('Janeiro é primeiro trimestre')
+            } else if (numero == 2){
+                alert('Fevereiro é primeiro trimestre')
+            } else if (numero == 3){
+                alert('Março é primeiro trimestre')
+            } else if (numero == 4){
+                alert('Abril é segundo trimestre')
+            } else if (numero == 5){
+                alert('Maio é segundo trimestre')
+            } else if (numero == 6){
+                alert('Junho é segundo trimestre')
+            } else if (numero == 7){
+                alert('Julho é terceiro trimestre')
+            } else if (numero == 8){
+                alert('Agosto é terceiro trimestre')
+            } else if (numero == 9){
+                alert('Setembro é terceiro trimestre')
+            } else if (numero == 10){
+                alert('Outubro é quarto trimestre')
+            } else if (numero == 11){
+                alert('Novembro é quarto trimestre')
+            } else if (numero == 12){
+                alert('Dezembro é quarto trimestre')
+            } else {
+                alert('Digite um número entre 1 e 12')
+            }
+        }
+    </script>
+</body>
+</center>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>COMPRIMENTO DA PALAVRA</title>
+	<link rel="stylesheet" type="text/css" href="calculadora.css">
+</head>
+<center>
+<body>
+	<style type="text/css">
+.botao {
+		background: rgb(255, 178, 38);
+		color: black;
+		font-weight: bold;
+		width: 50%;
+		font-size: 20px;
+		border: none;
+		border-radius: 5px;
+		padding: 10px 25px;
+		margin: 0 0 10px;
+}
+
+.p {
+		background: rgb(255, 255, 255);
+		font-weight: bold;
+		width: 50%;
+		font-size: 20px;
+}
+
+.but {
+		background: rgb(255, 178, 38);
+		color: black;
+		font-weight: bold;
+		width: 50%;
+		font-size: 20px;
+		border: none;
+		border-radius: 3px;
+		padding: 7px 2px;
+}
+</style>
+
+	<h1 style="font-size: 30px; background:rgb(169,169,169)";>COMPRIMENTO DA PALAVRA</span></h1>
+
+	<main>
+		<div>
+			<input type="text" class="but" placeholder="Insira uma palavra" id="palavra">
+		</div></br>
+
+		<div>
+			<input type="button" name="" value="CALCULAR" class="botao" onclick="calc()">
+		</div>
+
+		<div>
+			<p class="p" id="result"></p>
+		</div>
+	</main>
+
+	<script>
+		const calc = () => {
+			let palavra = document.getElementById('palavra').value;
+
+			document.getElementById('result').innerHTML = `<br> O tamanho da palavra é ${palavra.length} caracteres`
+		}
+
+	</script>
+
+</body>
+</center>
+</html>

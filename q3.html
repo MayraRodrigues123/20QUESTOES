@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>NÚMEROS INTEIROS</title>
+  <link rel="stylesheet" type="text/css" href="calculadora.css">
+</head>
+<center>
+<body>
+  <style type="text/css">
+.botao {
+    background: rgb(255, 178, 38);
+    color: black;
+    font-weight: bold;
+    width: 50%;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin: 0 0 10px;
+}
+
+.p {
+    background: rgb(255, 255, 255);
+    font-weight: bold;
+    width: 50%;
+    font-size: 20px;
+}
+
+.but {
+    background: rgb(255, 178, 38);
+    color: black;
+    font-weight: bold;
+    width: 50%;
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+    padding: 7px 2px;
+}
+  </style>
+
+  <h1 style="font-size: 30px; background:rgb(169,169,169)";>NÚMEROS INTEIROS</span></h1>
+  <main>
+
+    <div>
+      <input class="but" type="number" placeholder="INFORME UM NÚMERO" id="num">
+    </div></br>
+
+    <div>
+      <input class="botao" type="button" name="" value="CALCULAR" onclick="calc()">
+    </div>
+
+    <div>
+      <p class="p" id="result"></p>
+    </div>
+
+  </main>
+
+  <script>
+    const calc = () => {
+      let num = document.getElementById('num').value;
+
+      let dobro = parseFloat(num)*2;
+      let triplo = parseFloat(num)*3;
+      let quadrado = parseFloat(num)**2;
+      let cubo = parseFloat(num)**3;
+      let raizquadrada = Math.sqrt(num);
+
+        document.getElementById('result').innerHTML = `<br>O NÚMERO ${num} TEM:<br>DOBRO = ${dobro}<br>TRIPLO = ${triplo}<br>QUADRADO = ${quadrado}<br>CUBO = ${cubo}<br>RAIZ QUADRADA
+= ${raizquadrada}`
+      }
+
+  </script>
+</body>
+</center>
+</html>
